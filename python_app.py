@@ -14,4 +14,7 @@ body = ''
 em = EmailMessage()
 em['From'] = email_sender
 em['To'] = email_receiver
-em['subject']
+em['subject'] = subject
+em.set_content(body)
+
+context = ssl.create_default_context()
