@@ -1,7 +1,7 @@
 from email.message import EmailMessage
+import smtplib
 from app2 import password
 import ssl
-import smtp 
 
 email_sender = 'spiritedndiligent@gmail.com'
 email_password = password
@@ -18,3 +18,5 @@ em['subject'] = subject
 em.set_content(body)
 
 context = ssl.create_default_context()
+
+with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context)
