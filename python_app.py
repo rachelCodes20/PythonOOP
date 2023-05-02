@@ -6,7 +6,7 @@ import ssl
 email_sender = 'spiritedndiligent@gmail.com'
 email_password = password
 
-email_receiver = ''
+email_receiver = 'taxalo9476@jobbrett.com'
 
 subject = 'Please remember to subscribe'
 body = ''
