@@ -33,14 +33,15 @@ def get_bet():
     while True:
         amount = input("What would you like to bet? $")
         if amount.isdigit():
-            amount = int(amount)
-            if amount > 0:
-                break
+              amount = int(amount)
+              if MIN_BET <= amount <= MAX_BET:
+                  break
+              else:
+                  print("Amount must be greater than 0.")
             else:
-                print("Amount must be greater than 0.")
-        else:
-            print("Please enter a number.")
+                print("Please enter a number.")
     return amount
+
 def main():
     balance = deposit()
     
