@@ -31,7 +31,7 @@ def get_number_of_lines():
      
 def get_bet():
     while True:
-        amount = input("What would you like to deposit? $")
+        amount = input("What would you like to bet? $")
         if amount.isdigit():
             amount = int(amount)
             if amount > 0:
